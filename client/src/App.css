@@ -36,6 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.title{
+  text-align: center;
+}
 
 .videos{
   display: flex;
@@ -58,4 +61,19 @@
   border-radius: 12px;
   max-width: 100%;
   height: auto;
+}
+
+.number-1{
+  width:25%;
+  margin:auto;
+}
+
+.runner-ups{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.runner-up{
+  width:20%;
 }
