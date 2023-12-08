@@ -21,13 +21,17 @@ function Home() {
 
   return (
     <div> 
+        <h1 className="title">YouTube top 50</h1>
         {loading && <div>Loading...</div>}
-        {!loading && <div>{videos.map((item)=>{
-            return(<div key={item.id}>
-                <img alt="video" src={item.snippet.thumbnails.default.url}>
-                </img>
+        {!loading && <div className="videos">{videos.map((item)=>{
+            return(
+            <div className="video-container" key={item.id}>
+                <div className="img-container">
+                    <img alt="thumbnail" className="thumbnail" src={item.snippet.thumbnails.high.url}/> 
+                </div>
                 <p>{item.snippet.title}</p>
-                </div>)
+            </div>
+            )
         } )}</div>}
     </div>
   )
