@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    margin: 2em;
+}
+nav ul{
+    display: flex;
+    gap: 4.1em;
+    list-style-type: none;
+
+}
