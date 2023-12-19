@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <header className="header">
@@ -6,8 +7,8 @@ function Navbar() {
 
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Videos</li>
+          <Link to="/" ><li>Home</li></Link>
+          <Link to="top50"> <li>Videos</li> </Link>
         </ul>
       </nav>
 

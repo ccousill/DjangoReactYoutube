@@ -98,11 +98,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # CORS
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Assuming your React app runs on this address
-    # Add more allowed origins if needed
+    "http://localhost:3000",
 ]
 
-# Allow credentials (cookies, authentication headers) to be sent cross-origin
 CORS_ALLOW_CREDENTIALS = True
 
 
