@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "../components/Home";
+import Top50 from "../components/Top50";
 import Navbar from "../components/UI/Navbar";
 function Top50Page() {
   return (
     <div className="wrapper">
       <Navbar />
-      <Home />
+      <Top50 />
     </div>
   );
 }

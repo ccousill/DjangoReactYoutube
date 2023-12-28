@@ -1,7 +1,6 @@
 import "./App.css";
 import "./css/navbar.css";
-import Home from "./components/Home";
-import Navbar from "./components/UI/Navbar";
+import "./css/home.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Top50Page from "./pages/Top50Page";

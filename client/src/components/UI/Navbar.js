@@ -1,10 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <header className="header">
-      <p>YouTube</p>
-
+      <Link to="/" className="title-link">YouTube</Link>
       <nav>
         <ul>
           <NavLink exact to="/" className={({isActive})=>isActive ? "active-link" : "link"}><li>Home</li></NavLink>

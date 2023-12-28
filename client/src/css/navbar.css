@@ -42,3 +42,8 @@ nav ul{
     color:black;
     text-underline-offset: 6px;
 }
+
+.title-link{
+    text-decoration: none;
+    color: black;
+}

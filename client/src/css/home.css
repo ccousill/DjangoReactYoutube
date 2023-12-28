@@ -1,0 +1,18 @@
+.home-section{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.home-info{
+    width:50%;
+}
+
+.home-info h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+}
+
+.home-videos{
+    width:50%;
+}
