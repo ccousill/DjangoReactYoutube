@@ -11,7 +11,7 @@ function Top50() {
     setLoading(true);
     const fetch = async () => {
       try {
-        const response = await getVideos();
+        const response = await getVideos(100);
         setVideos(response.data.videos);
       } catch (e) {
         console.log(e);

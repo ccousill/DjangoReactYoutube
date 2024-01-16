@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 
 @api_view(['GET'])
 def get_top_youtube_videos(request):
+    number_param = request.GET.get('number')
     youtube_api_key = settings.DJANGO_YOUTUBE_API_KEY
 
 
@@ -19,7 +20,7 @@ def get_top_youtube_videos(request):
         'chart': 'mostPopular',
         'regionCode': 'US', 
         'videoCategoryId': '0',
-        'maxResults': 100,
+        'maxResults': int(number_param),
         'publishedAfter': yesterday_str,
         'key': youtube_api_key,
     }
